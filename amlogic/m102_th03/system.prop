@@ -1,0 +1,142 @@
+
+ro.adb.secure=1
+ro.sf.lcd_density=160
+keyguard.no_require_sim=1
+
+
+# Status bar customization
+#ro.statusbar.widget=true
+#ro.statusbar.button=true
+ro.statusbar.gotodownload=true
+#ro.statusbar.widget.power=true
+#ro.statusbar.yearmonthdayweek=true
+
+ro.statusbar.volume=true
+ro.statusbar.screenshot=true
+
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+#wifi.supplicant_scan_interval = 60
+#alsa.mixer.playback.master=DAC2 Analog
+#alsa.mixer.capture.master=Analog
+
+hwui.render_dirty_regions=false
+
+# Disable un-supported Android feature
+hw.nopm=false
+hw.nobattery=false
+hw.nophone=false
+hw.novibrate=true
+hw.hasethernet=true
+#hw.hasdata=true
+#hw.has.bluetooth=false
+ro.platform.has.touch=true
+
+#set to 0 temporarily so touch works without other changes
+ro.sf.hwrotation=0
+ro.display.defaultorientation=0
+
+ro.ui.cursor=surface
+
+ro.hardware=amlogic
+
+sys.fb.bits=32
+
+
+# Enable player buildin
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=ac3,eac3,rm,flac,dts
+media.amplayer.enable=true
+media.amplayer.support-exname=divx,h264,avi,ts,m2ts,mkv,mp4,mpg,mpeg,rm,rmvb,wmv,ts,dat,vob,vc1
+media.amplayer.support-exname1=mp2,mp3,ac3
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+media.amplayer.thumbnail=true
+media.amplayer.widevineenable=false
+media.amplayer.dsource4local=1
+media.amplayer.startmode=true
+media.arm.audio.decoder=ape,flac,dts,ac3,eac3,wma,wmapro,mp3,aac,vorbis,raac,cook,amr,pcm,adpcm,aac_latm,rm
+media.wfd.use-pcm-audio=false
+media.wfd.videoreolutiontype=1
+media.wfd.videoreolutiongroup=0
+media.wfd.videoframerate=24
+media.html5videowin.enable=1
+media.decoder.vfm.defmap=decoder ppmgr amvideo
+
+# Nand write need force sync when gadget
+gadget.nand.force_sync=true
+
+#support rotation btn for apk compatibility,set true btn useful
+sys.rotation.settings=false
+
+# HDMI 
+ro.hdmi480p.enable=true
+#rw.fb.need2xscale=ok
+#media.amplayer.osd2xenable=true
+audio.policy.digital.fixed=false
+
+# App optimization
+ro.app.optimization=true
+
+#Dual display
+ro.vout.dualdisplay3=false
+ro.vout.player.exit=false
+
+
+ro.bootanimation.rotation=0
+
+#used to set default surface size, set 1 when hwrotation is 270, set 3 when hwrotation is 90;need set ro.bootanimation.rotation 0;
+#debug.default.dimention=1
+
+#support media poll uevent,can use sd cardread on usb port
+has.media.poll=true
+
+
+#used forward seek for libplayer
+media.libplayer.seek.fwdsearch=1
+
+#fix hls sync 
+libplayer.livets.softdemux=1
+libplayer.netts.recalcpts=1
+
+#map volume
+ro.audio.mapvalue=0,0,0,0
+
+#add livhls,libcurl as default hls
+media.libplayer.curlenable=true
+media.libplayer.modules=vhls_mod,dash_mod,curl_mod
+
+#bug 73407
+ro.app.hdmi.allswitch=true
+
+#Time Zone
+persist.sys.timezone=Africa/Casablanca
+
+#bug 80066
+ro.osd2.size=64x64
+
+#new feature 81282
+ro.alarm.align=true
+
+#new feature 81297
+ro.permissions.settings=true
+
+
+
+#upport for OTAUpdate
+ro.product.firmware=00442001
+ro.product.otaupdateurl=http://10.28.49.25:8080/otaupdate/update
+
+ro.module.dualscaler=true
+ro.module.singleoutput=true
+#ro.screen.portrait=true
+ro.quickboot.enable=false
+#config.disable_telephony=true
+config.enable_quickboot=true
+#config.disable_bluetooth=true
+media.amplayer.low_ram=true
+
+#only Horizontal panel need to set prop.sp.gsensor=true,fix screen orientation is reverse 180 for some apk.it will enable a menu to selet orientation for apk
+prop.sp.gsensor=true
+

@@ -1,0 +1,4 @@
+# param partition type
+# to allow write operation from appdomain
+/param(/.*)?            u:object_r:param_file:s0
+

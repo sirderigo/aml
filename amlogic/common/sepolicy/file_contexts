@@ -1,0 +1,14 @@
+# label graphics device with a new type, we need
+# to allow write operation from appdomain
+/dev/mali              u:object_r:mali_device:s0
+
+#/dev/ttySAC0            u:object_r:hci_attach_dev:s0
+#/dev/ttySAC1            u:object_r:gps_device:s0
+/dev/ump                u:object_r:ump_device:s0
+
+#/dev/v4l-subdev[0-9]*   u:object_r:video_device:s0
+
+#/dev/video16            u:object_r:video_device:s0
+
+#/dev/video40            u:object_r:camera_device:s0
+#/dev/media2             u:object_r:camera_device:s0

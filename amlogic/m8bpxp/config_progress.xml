@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<progress_configs>
+ 	<command sn="0" path="usb_spl.bin" address="0xd9000000" run="true">load spl</command>
+	<command sn="1" path="u-boot-orig.bin" address="0x8f800000" run="false">load uboot</command>
+	<command sn="2">run 0x8f800000</command>
+	<command sn="3">defenv</command>
+	<command sn="4" cmd="setenv recovery_command --usb_burning" address="0x82000000">load addr</command>
+	<command sn="5">cmd_in_mem 0x82000000</command>
+	<command sn="6">save</command>
+	<command sn="7" path="uImage_usb_burning" address="0x82000000" run="false">load uimage</command>
+	<command sn="8">bootm 0x82000000</command>
+	<command sn="9" >wipe_data</command>
+	<command sn="10" count="150">update:update.zip</command>
+	<command sn="11">reset</command>
+</progress_configs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<resources>
+        <FilterActivity 
+            packagename="com.farcore.videoplayer">
+            <Class name="com.farcore.videoplayer.playermenu"/>
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.amvideoplayer">
+            <Class name="com.amlogic.amvideoplayer.AmVideoPlayer"/>
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.android.gallery3d">
+            <Class name="com.android.gallery3d.app.Gallery"/>
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.mediacenter">
+            <Class name="com.amlogic.mediacenter.AmlMediaCenter"/>
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.android.browser">
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.DVBPlayer">
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.bookplay_package">
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.dvbepg">
+        </FilterActivity>
+           <FilterActivity 
+            packagename="com.amlogic.dvbsearch">
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.progmanager">
+        </FilterActivity>
+        <FilterActivity 
+            packagename="com.amlogic.DTVPlayer">
+        </FilterActivity>
+</resources>
+
+
+
+

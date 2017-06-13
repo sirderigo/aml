@@ -1,0 +1,15 @@
+#device    mountpoint    fstype    options    flags?    (fstab    version    2)
+bootloader  /bootloader emmc    defaults    defaults
+boot_env    /boot_env   emmc    defaults    defaults
+/dev/block/logo        /logo       emmc    defaults    defaults
+/dev/block/aml_logo    /aml_logo   emmc    defaults    defaults
+/dev/block/recovery    /recovery   emmc    defaults    defaults
+/dev/block/boot        /boot       emmc    defaults    defaults
+/dev/block/system   /system ext4    defaults    defaults
+/dev/block/cache    /cache  ext4    defaults    defaults
+/dev/block/data         /data   ext4    defaults    defaults
+/dev/block/mmcblk0p1   /sdcard    vfat    defaults    defaults
+/dev/block/sda1#        /udisk     auto    defaults    defaults
+
+
+

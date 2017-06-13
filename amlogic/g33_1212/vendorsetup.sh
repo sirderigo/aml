@@ -1,0 +1,3 @@
+add_lunch_combo g33_1212-eng
+add_lunch_combo g33_1212-user
+add_lunch_combo g33_1212-userdebug

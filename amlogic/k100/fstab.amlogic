@@ -1,0 +1,9 @@
+# Android fstab file.
+#<src>                                                  <mnt_point>         <type>    <mnt_flags>                                                                         <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#/dev/block/system   /system ext4    ro          wait
+#/dev/block/cache    /cache  ext4    discard,noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait
+#/dev/block/data     /data   ext4    discard,noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait
+/devices/platform/AMLOGIC_CARD/card_host/memorycard0/memorycard0:sd/block/cardblksd /storage/external_storage/sdcard1  vfat  defaults  voldmanaged=sdcard1:auto

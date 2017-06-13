@@ -1,0 +1,3 @@
+add_lunch_combo m201_512m_th01-eng
+add_lunch_combo m201_512m_th01-user
+add_lunch_combo m201_512m_th01-userdebug

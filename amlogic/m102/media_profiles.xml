@@ -1,0 +1,366 @@
+<MediaSettings>
+<CamcorderProfiles cameraId="0" startOffsetMs="50">
+<EncoderProfile quality="low" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+
+<EncoderProfile quality="timelapselow" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="high" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+
+<EncoderProfile quality="timelapsehigh" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="480p" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapse480p" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="cif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="352"
+height="288"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapsecif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="352"
+height="288"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapseqcif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<ImageEncoding quality="70" />
+<ImageEncoding quality="80" />
+<ImageEncoding quality="90" />
+
+</CamcorderProfiles>
+
+
+<CamcorderProfiles cameraId="1" startOffsetMs="50">
+
+
+<EncoderProfile quality="low" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapselow" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="high" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapsehigh" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="480p" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapse480p" fileFormat="3gp" duration="60">
+<Video codec="h264"
+bitRate="1440000"
+width="640"
+height="480"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="cif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="352"
+height="288"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapsecif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="352"
+height="288"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+<EncoderProfile quality="timelapseqcif" fileFormat="3gp" duration="30">
+<Video codec="h264"
+bitRate="1440000"
+width="176"
+height="144"
+frameRate="15" />
+
+<Audio codec="aac"
+bitRate="96000"
+sampleRate="16000"
+channels="1" />
+</EncoderProfile>
+
+</CamcorderProfiles>
+
+
+<AudioEncoderCap name="amrwb"
+enabled="true"
+minBitRate="6600"
+maxBitRate="23050"
+minSampleRate="16000"
+maxSampleRate="16000"
+minChannels="1"
+maxChannels="1" />
+
+<AudioEncoderCap name="amrnb"
+enabled="true"
+minBitRate="2600"
+maxBitRate="4200"
+minSampleRate="8000"
+maxSampleRate="8000"
+minChannels="1"
+maxChannels="1" />
+
+<AudioEncoderCap name="aac" 
+enabled="true"
+minBitRate="758" 
+maxBitRate="288000"
+minSampleRate="8000" 
+maxSampleRate="16000"
+minChannels="1" 
+maxChannels="1" />
+
+<VideoEncoderCap name="h263"
+enabled="true"
+minBitRate="192000"
+maxBitRate="420000"
+minFrameWidth="176"
+maxFrameWidth="352"
+minFrameHeight="144"
+maxFrameHeight="288"
+minFrameRate="5"
+maxFrameRate="20" />
+
+<VideoEncoderCap name="m4v"
+enabled="true"
+minBitRate="192000"
+maxBitRate="1440000"
+minFrameWidth="176"
+maxFrameWidth="640"
+minFrameHeight="144"
+maxFrameHeight="480"
+minFrameRate="5"
+maxFrameRate="15" />
+
+<VideoEncoderCap name="h264"
+enabled="true"
+minBitRate="192000"
+maxBitRate="6000000"
+minFrameWidth="176"
+maxFrameWidth="640"
+minFrameHeight="144"
+maxFrameHeight="480"
+minFrameRate="5"
+maxFrameRate="30" />
+
+
+<ImageEncoding quality="70" />
+<ImageEncoding quality="80" />
+<ImageEncoding quality="90" />
+
+
+
+<VideoDecoderCap name="wmv" enabled="true" />
+<AudioDecoderCap name="wma" enabled="true" />
+
+<EncoderOutputFileFormat name="3gp" />
+
+<VideoEditorCap  maxInputFrameWidth="640"
+        maxInputFrameHeight="480" maxOutputFrameWidth="640"
+        maxOutputFrameHeight="480" maxPrefetchYUVFrames="10"/>
+    <!--
+        The VideoEditor Export codec profile and level values
+        correspond to the values in OMX_Video.h.
+        E.g. for h264, profile value 1 means OMX_VIDEO_AVCProfileBaseline
+        and  level 4096 means OMX_VIDEO_AVCLevel41.
+        Please note that the values are in decimal.
+        These values are for video encoder.
+    -->
+    <!--
+      Codec = mpeg4, Simple profile, level 5
+    -->
+    <ExportVideoProfile name="m4v" profile= "4" level="8"/>
+
+</MediaSettings>

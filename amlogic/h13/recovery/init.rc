@@ -1,0 +1,53 @@
+on early-init
+    start ueventd
+		insmod /boot/aml_nftl_dev.ko
+    symlink /initlogo.rle.bak /initlogo.rle
+    write /sys/class/graphics/fb0/blank 0
+    write /sys/class/graphics/fb1/blank 1
+    insmod /boot/deferreddrv.ko
+
+on init
+    sysclktz 0
+    loglevel 7
+
+    export PATH /sbin:/system/sbin:/system/bin:/system/xbin
+    export LD_LIBRARY_PATH /system/lib
+    export ANDROID_BOOTLOGO 1
+    export ANDROID_ROOT /system
+    export ANDROID_ASSETS /system/app
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /sdcard
+
+    symlink /system/etc /etc
+
+    mkdir /system
+    mkdir /data
+    mkdir /cache
+    mount /tmp /tmp tmpfs
+
+on boot
+
+    ifup lo
+    hostname localhost
+    domainname localdomain
+
+    # Disable suspend
+    write /sys/power/wake_lock true
+
+    class_start default
+
+service ueventd /sbin/ueventd
+    critical
+
+service remotecontrol /sbin/remotecfg /etc/remote.conf
+    oneshot
+
+#service console /sbin/sh
+service console /sbin/busybox sh
+    console
+    
+# patch to set screen size
+service display /sbin/sh /sbin/set_display_mode.sh panel
+    oneshot
+
+service recovery /sbin/recovery

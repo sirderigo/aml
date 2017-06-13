@@ -1,0 +1,184 @@
+ro.adb.secure=1
+ro.sf.lcd_density=160
+keyguard.no_require_sim=1
+
+mbx.timeout.enable=false
+sys.screensaver.enable=true
+ro.statusbar.widget=false
+ro.statusbar.button=false
+ro.statusbar.yearmonthdayweek=false
+
+#wifi.interface=ra0
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+#wifi.supplicant_scan_interval = 60
+#alsa.mixer.playback.master=DAC2 Analog
+#alsa.mixer.capture.master=Analog
+
+hwui.render_dirty_regions=false
+
+# Configure features
+persist.sys.timezone=Asia/Shanghai
+hw.nopm=true
+hw.nobattery=true
+hw.nophone=true
+hw.novibrate=true
+hw.nogps=true
+hw.cameras=0
+hw.hasethernet=true
+hw.hasusbcamera=true
+hw.has.accelerometer=true
+
+hw.has.bluetooth=false
+hw.nolocation=true
+hw.nosoundpartition=true
+
+prop.sp.brightness=off
+ro.screen.has.brightness=false
+ro.quickboot.enable=false
+
+ro.ethernet.default_on=true
+
+ro.screen.has.timeout=false
+ro.platform.has.security=false
+ro.platform.has.tts=false
+ro.platform.has.touch=false
+ro.platform.has.mbxuimode=true
+ro.platform.has.tvuimode=true
+
+ro.ui.cursor=surface
+
+#set to 0 temporarily so touch works without other changes
+ro.sf.hwrotation=0
+
+ro.hardware=amlogic
+
+#camera 720p
+ro.camera.preview.MaxSize=1280x720
+ro.camera.preview.LimitedRate=1280x720x30,640x480x30,320x240x28
+ro.camera.preview.UseMJPEG=1
+
+# Enable 32-bit OSD
+sys.fb.bits=32
+
+# Disable GPS
+gps.enable=false
+
+# Enable cold reboot mode
+sys.cold-reboot.enable=true
+
+#keep landscape in launcher
+sys.keeplauncher.landcape=true
+
+#Enable player buildin
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=ac3,eac3,rm,dts,thd
+media.amplayer.enable=true
+media.amplayer.support-exname=divx,h264,avi,ts,m2ts,mkv,mp4,mpg,mpeg,rm,rmvb,wmv,ts,dat,vob,vc1
+media.amplayer.support-exname1=mp2,mp3,ac3
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+media.amplayer.thumbnail=true
+media.amplayer.startmode=true
+media.amplayer.widevineenable=false
+media.amplayer.dsource4local=1
+media.arm.audio.decoder=ape,flac,dts,ac3,eac3,wma,wmapro,mp3,aac,vorbis,raac,cook,amr,pcm,adpcm,aac_latm,rm,alac
+media.wfd.use-pcm-audio=true
+media.wfd.videoreolutiontype=0
+media.wfd.videoreolutiongroup=5
+media.wfd.videoframerate=20
+media.html5videowin.enable=1
+media.decoder.vfm.defmap=decoder ppmgr deinterlace amvideo
+media.amplayer.seekkeyframe=1
+
+# Nand write need force sync when gadget
+gadget.nand.force_sync=true
+
+#hide status bar
+persist.sys.hideStatusBar=true
+
+#support media poll uevent,can use sd cardread on usb port
+has.media.poll=true
+
+#used forward seek for libplayer
+media.libplayer.seek.fwdsearch=1
+#TV FEATURE
+ro.tv.shortcutkey=true
+tv.globalsetup_show_status=false
+tv.tvstart_status=true
+tv.shortcutkey_show=false
+ro.tv.source_rember=false
+tv.powermanager.nevertimeout=true
+tv.android_no_sourcelist=false
+ro.tv.tvinchannel.av1=4097
+ro.tv.tvinchannel.av2=4098
+ro.tv.tvinchannel.ypbpr1=2048
+tv.powerOffShow=true
+tv.androidvol.mod.enable=true
+ro.tv.dtvmode.dvb=true
+ro.audio.wakelock.en=false
+ro.tv.disable.powerkey=true
+config.enable_quickboot=true
+
+#ebable bootvideo
+#service.bootvideo=1
+######## UBOOTENV VARIBLES - r/w as system properties ##########
+#
+#  Now we can load ubootenv varibles to system properties. 
+#  We use a special prefix ("ubootenv.var" as default) to indicate that the 'property'
+#  actually is an ubootenv varible. 
+#  
+#  A ubootenv 'property' will be initialized during system booting. And when user set
+#  a different value, it will be written back to ubootenv device immediately.
+#
+ro.mtd.ubootenv=ubootenv
+ro.ubootenv.varible.prefix=ubootenv.var
+ubootenv.var.bootcmd=
+ubootenv.var.cpuclock=
+ubootenv.var.gpuclock=
+ubootenv.var.memsize=
+ubootenv.var.ethaddr=
+ubootenv.var.firstboot=
+ubootenv.var.ipaddr=
+ubootenv.var.gatewayip=
+ubootenv.var.suspend=
+ubootenv.var.ubootversion=
+ubootenv.var.usbboot=
+#disable panel rotate
+ubootenv.var.has.accelerometer=
+ubootenv.var.upgradefbc=
+ubootenv.var.outputmode=
+ubootenv.var.lcd_reverse=
+
+# Disable preload-class
+ro.amlogic.no.preloadclass=1
+
+#service.adb.tcp.port=5555
+const.window.w=1920
+const.window.h=1080
+sys.defaultStream.ismusic=true
+ro.app.optimization=true
+ro.platform.has.realoutputmode=true
+
+#add livhls,libcurl as default hls
+media.libplayer.curlenable=true
+media.libplayer.modules=vhls_mod,dash_mod,curl_mod
+
+#sofrware demux
+libplayer.netts.recalcpts=1
+libplayer.livets.softdemux=1
+#libplayer.netts.softdemux=0
+#media.libplayer.fastswitch=1
+
+#bug 80066
+ro.osd2.size=64x64
+
+#new feature 81282
+ro.alarm.align=true
+
+#new feature 81297
+ro.permissions.settings=true
+#PD103969
+ro.hdmiplugdetect.dis=true
+

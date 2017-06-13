@@ -1,0 +1,6 @@
+com.polarbit.ragingthunder=5
+com.arbstudios.bioball=5
+com.fridgecat.android.atilt=5
+com.sxiaoao.tgcar3d2=5
+com.sxiaoao.car3d2=5
+com.qiyi.video=5

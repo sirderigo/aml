@@ -1,0 +1,10 @@
+#!/bin/sh
+export DVB_TYPE=AML_DVB_TV
+export LUNCH_NAME=k200_th12
+. build/envsetup.sh
+lunch $LUNCH_NAME-user
+export PLATFORM_NAME=M8
+export LIBS_DIR_NAME=M8
+export MAIN_DIR=$ANDROID_BUILD_TOP
+export TH_DTV_DIR=$MAIN_DIR/packages/amlogic/th_dtv
+export PRJ_OUT_DIR=$MAIN_DIR/out/target/product/$LUNCH_NAME

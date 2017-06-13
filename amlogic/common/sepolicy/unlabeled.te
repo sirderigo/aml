@@ -1,0 +1,2 @@
+allow unlabeled unlabeled:filesystem { associate };
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		 <string name="config_default_name" translatable="false">中华云盒</string>
+     <bool name="th_config_autoboot_dlna_dmr">true</bool>
+     <bool name="th_config_autoboot_airplay">true</bool>
+</resources>

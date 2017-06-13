@@ -1,0 +1,121 @@
+
+ro.adb.secure=1
+ro.sf.lcd_density=160
+keyguard.no_require_sim=1
+
+mbx.timeout.enable=false
+sys.screensaver.enable=true
+ro.statusbar.widget=false
+ro.statusbar.button=false
+ro.statusbar.yearmonthdayweek=false
+
+#wifi.interface=ra0
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+#wifi.supplicant_scan_interval = 60
+#alsa.mixer.playback.master=DAC2 Analog
+#alsa.mixer.capture.master=Analog
+
+hwui.render_dirty_regions=false
+
+# Configure features
+hw.nopm=true
+hw.nobattery=true
+hw.nophone=true
+hw.novibrate=true
+hw.nogps=true
+hw.cameras=0
+hw.hasethernet=true
+hw.hasusbcamera=true
+hw.has.accelerometer=true
+
+#used in packages/apps/Settings/.../Utils.java
+hw.has.bluetooth=false
+
+ro.ethernet.default_on=true
+ro.config.low_ram=true
+#dalvik.vm.jit.codecachesize=0
+
+ro.screen.has.timeout=false
+ro.screen.has.brightness=false
+ro.platform.has.security=false
+ro.platform.has.tts=false
+ro.platform.has.touch=false
+ro.platform.has.mbxuimode=true
+
+ro.ui.cursor=surface
+
+#set to 0 temporarily so touch works without other changes
+ro.sf.hwrotation=0
+
+ro.hardware=amlogic
+
+# Enable 32-bit OSD
+sys.fb.bits=32
+
+# Disable GPS
+gps.enable=false
+
+#keep landscape in launcher
+sys.keeplauncher.landcape=true
+
+#Enable player buildin
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=flac
+media.amplayer.enable=true
+media.amplayer.support-exname=divx,h264,avi,ts,m2ts,mkv,mp4,mpg,mpeg,rm,rmvb,wmv,ts,dat,vob,vc1
+media.amplayer.support-exname1=mp2,mp3,ac3
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+media.amplayer.thumbnail=true
+media.amplayer.startmode=true
+#media.p2pplay.enable=true
+media.amplayer.widevineenable=true
+media.amplayer.dsource4local=1
+media.arm.audio.decoder=ape,flac,dts,ac3,eac3,wma,wmapro,mp3,aac,vorbis,raac,cook,amr,pcm,adpcm,aac_latm
+media.wfd.use-pcm-audio=true
+media.wfd.videoreolutiontype=0
+media.wfd.videoreolutiongroup=5
+media.wfd.videoframerate=20
+media.html5videowin.enable=1
+media.decoder.vfm.defmap=decoder ppmgr deinterlace amvideo
+
+# Nand write need force sync when gadget
+gadget.nand.force_sync=true
+
+#hide status bar
+persist.sys.hideStatusBar=true
+
+#support media poll uevent,can use sd cardread on usb port
+has.media.poll=true
+
+#used forward seek for libplayer
+media.libplayer.seek.fwdsearch=1
+
+#service.adb.tcp.port=5555
+const.window.w=1920
+const.window.h=1080
+ro.app.optimization=true
+
+#add livhls,libcurl as default hls
+#media.libplayer.curlenable=true
+#media.libplayer.modules=vhls_mod,curl_mod
+media.libplayer.modules=vhls_mod,dash_mod
+
+#Time Zone
+persist.sys.timezone=Asia/Shanghai
+
+#bug 80066
+ro.osd2.size=64x64
+
+#new feature 81282
+ro.alarm.align=true
+
+#new feature 81297
+ro.permissions.settings=true
+
+#don't need brightness
+prop.sp.brightness=off
+ro.quickboot.enable=false
+

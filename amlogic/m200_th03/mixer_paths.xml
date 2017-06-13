@@ -1,0 +1,32 @@
+<mixer>
+   <ctl name="Ext Spk Switch" value="0" />
+   <ctl name="Headphone Switch" value="0" />
+   <ctl name="Lineout1 Left in" value="off" />
+   <ctl name="Lineout2 Left in" value="off" />
+   <ctl name="MIXOUTL DACL to MIXOUTL Volume" value="0" />
+   <ctl name="MIXOUTL DACR Mono Switch" value="0" />
+   <ctl name="Digital Capture Volume" value="106" />
+  <path name="speaker">
+   <ctl name="Ext Spk Switch" value="1" />
+   <ctl name="Lineout1 Left in" value="MIXOUTL" />
+   <ctl name="Lineout2 Left in" value="Inverted MIXOUTL" />
+   <ctl name="MIXOUTL DACL to MIXOUTL Volume" value="28" />
+   <ctl name="MIXOUTL DACR Mono Switch" value="1" />
+   <ctl name="Digital Playback Volume" value="189" />
+  </path>
+
+  <path name="headphone">
+   <ctl name="Digital Playback Volume" value="185" />
+   <ctl name="Headphone Switch" value="1" />
+  </path>
+
+  <path name="main_mic">
+   <ctl name="PGAIN Left Gain" value="15" />
+   <ctl name="MIXINL PGAINL to MIXINL Volume" value="11" />
+  </path>
+
+  <path name="headset-mic">
+   <ctl name="PGAIN Left Gain" value="15" />
+   <ctl name="MIXINL PGAINL to MIXINL Volume" value="11" />
+  </path>
+</mixer>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <integer name="max_tabs">16</integer>
+    <!--  The maximum active tabs, 0 means no limit -->
+    <integer name="max_active_tabs">2</integer>
+</resources>

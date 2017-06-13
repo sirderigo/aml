@@ -1,0 +1,9 @@
+type param_file, file_type, mlstrustedobject;
+
+allow domain param_file:dir r_dir_perms;
+allow domain param_file:file { read write };
+allow domain param_file:lnk_file read;
+
+allow appdomain param_file:dir r_dir_perms;
+allow appdomain param_file:file { read write };
+allow appdomain param_file:lnk_file read;

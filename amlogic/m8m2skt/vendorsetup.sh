@@ -1,0 +1,3 @@
+add_lunch_combo m8m2skt-eng
+add_lunch_combo m8m2skt-user
+add_lunch_combo m8m2skt-userdebug

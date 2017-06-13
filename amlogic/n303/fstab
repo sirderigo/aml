@@ -1,0 +1,8 @@
+/dev/block/system /system ext4 ro,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait
+/dev/block/data /data ext4 rw,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait,check
+/dev/block/cache /cache ext4 rw,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait,check
+/dev/block/param /param ext4 rw,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait,check
+
+#/dev/block/mmcblk0p2 /system ext4 ro,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait
+#/dev/block/mmcblk0p4 /data ext4 rw,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait,check
+#/dev/block/mmcblk0p3 /cache ext4 rw,noatime,nodiratime,nosuid,nodev,noauto_da_alloc wait,check

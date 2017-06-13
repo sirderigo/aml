@@ -1,0 +1,13 @@
+# NTFS
+allow vold self:capability { setgid setuid };
+
+allow vold fuse_device:chr_file rw_file_perms;
+allow vold unlabeled:filesystem {mount remount unmount };
+
+allow vold cpuctl_device:dir search;
+
+allow vold device:dir { open read };
+allow vold usb_device:dir { open read search };
+allow vold usb_device:chr_file { open read write ioctl };
+allow vold system_data_file:fifo_file { open read write ioctl };
+

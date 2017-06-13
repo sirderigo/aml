@@ -1,0 +1,54 @@
+// parameters of PMU
+
+pmu_twi_id = 2;                         // PMU i2c bus ID
+pmu_irq_id = 0;                         // PMU IRQ id
+pmu_twi_addr = 0x34;                    // slave address of PMU
+pmu_battery_rdc = 121;                   // RDC of battery
+pmu_battery_cap = 3000;                 // capacity of battery
+pmu_battery_technology = 2;             // 1 = NiMH, 2 = LION, 3 = LIPO, 
+                                        // 4 = LiFe, 5 = NiCd, 6 = LiMn
+pmu_battery_name = "AML Battery";       // Name of battery, length of name should not large than 20 bytes
+pmu_init_chgcur = 500000;               // initial charging current limit, unit is uA
+pmu_suspend_chgcur = 1000000;           // suspend charging current limit, unit is uA
+pmu_resume_chgcur = 500000;             // resume charging current limit, unit is uA
+pmu_shutdown_chgcur = 1000000;          // shutdown charging current limit, unit is uA
+pmu_init_chgvol = 4200000;              // target charging voltage of battery, unit is uV
+pmu_init_chgend_rate = 10;              // current rate for end of charge;
+pmu_init_chg_enabled = 1;               // enable charge when initialize;
+pmu_init_adc_freq = 25;                 // adc sample frequent when initialize;
+pmu_init_adc_freqc = 100;               // coulomb adc sample frequent when initialize;
+pmu_init_chg_pretime = 50;              // pre-charging timeout, unit is minute;
+pmu_init_chg_csttime = 480;             // const-current charging timeout, unit is minute;
+pmu_usbvol_limit = 1;                   // enable voltage of VBUS;
+pmu_usbvol = 4400;                      // voltage limit of VBUS, unit is mV;
+pmu_usbcur_limit = 1;                   // enable current limit of VBUS;
+pmu_usbcur = 900;                       // current limit of VBUS, unit is mA;
+pmu_pwroff_vol = 3450;                  // power off voltage of battery, unit is mV;
+pmu_pwron_vol = 2900;                   // power on voltage of battery, unit is up;
+pmu_pekoff_time = 6000;                 // long press time of power key to shut down PMU, unit is ms;
+pmu_pekoff_en = 1;                      // enable long press of power key to shut down PMU;
+pmu_peklong_time = 1500;                // long press threshold time of power key, unit is ms;
+pmu_pwrok_time = 64;                    // powerok signal delay time, unit is ms;
+pmu_pwrnoe_time = 2000;                 // shutdown delay for N_OE, unit is ms;
+pmu_intotp_en = 1;                      // enable over temperature protect;
+pmu_pekon_time = 128;                   // powerkey hold time for power on, unit is ms
+pmu_charge_efficiency = 91;             // charging efficiency of Battery
+pmu_bat_curve = {                       // battery volume array, must be 16 members
+    // ocv, charge, discharge
+    {3132,      0,      0},  
+    {3273,      0,      0},  
+    {3414,      0,      0},  
+    {3555,      0,      0},  
+    {3625,      7,      9},  
+    {3660,      11,      14},  
+    {3696,      16,     18}, 
+    {3731,     20,     22}, 
+    {3766,     22,     28}, 
+    {3801,     29,     50}, 
+    {3836,     47,     62},
+    {3872,     57,     64},
+    {3942,     72,     75},
+    {4012,     82,     86},
+    {4083,     90,     94},
+    {4153,    100,    100}
+}
